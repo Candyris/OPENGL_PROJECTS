@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "windows-gcc-x64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/directory/include/**",
+                "${workspaceFolder}/include/**"
+
+            ],
+            "compilerPath": "C:/msys64/ucrt64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerArgs": [
+                "-std=c++17 -O3 -DDEBUG   -I./directory/include src/*.cpp LibraryStaticCpp/*.cpp src/*.c   -L./directory/lib -lglfw3 -lopengl32 -lgdi32 -lkernel32"
+            ]
+        }
+    ],
+    "version": 4
+}
